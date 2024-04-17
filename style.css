@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background: #f4f3e0;
+}
+.images{
+    max-width: 700px;
+    margin:0 auto;
+}
+.images img{
+    width: 100%;
+    object-fit: cover;
+}
+form{
+    max-width: 400px;
+    color:rgb(8, 8, 8);
+    padding:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 auto;
+    border:1px dotted #00b599;
+}
+h2{
+    text-align: center;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+.inputfields{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 12px; 
+    position: relative;
+}
+
+input{
+    background: #f4f3e0;
+    padding:12px 28px;
+    border:1px solid #262626;
+    outline: none;
+    margin: 8px 0;
+   
+}
+.height_error,
+.weight_error{
+position: absolute;
+font-size: 13px;
+color:#ae0000;
+bottom:-24px;
+}
+.submit{
+    margin-top: 8px;
+    background:#00b599;
+    color:#fff;
+    padding:12px 28px;
+    border:none;
+    outline: none;
+    border-radius: 8px;
+    border:1px solid #00b599;
+    transition:all 0.4s;
+}
+.submit:hover{
+    color:#00b599;
+    background:#f4f3e0;
+    border:1px solid #00b599;
+}
+.divider{
+    margin:20px auto;
+    width: 40%;
+    height:2px;
+    background: #00b599;
+    position: relative;
+}
+.divider:before,
+.divider:after{
+    content:'';
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    background: #00b599;
+    display: inline-block;
+    position: absolute;
+}
+.divider:before{
+    top:50%;
+    left:-15px;
+    transform: translate(50% ,-50%);
+}
+.divider:after{
+    top:50%;
+    right:-15px;
+    transform: translate(50% ,-50%);
+}
+.result_container{
+    margin:0 auto;
+    text-align: center;
+    max-width: 400px;
+    padding:20px;
+    margin-bottom: 12px;
+    color:#fff;
+}
+
+.underweight{
+    background: #00ade0;
+   
+}
+.healthy_weight{
+    background: #697f3d;
+ 
+}
+.overweight{
+    background: #fda635;
+  
+}
+.obesity{
+    background: #fb6f3a;
+ 
+}
